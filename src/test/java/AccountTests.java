@@ -38,4 +38,20 @@ public class AccountTests
         // Assert
         Assertions.assertEquals( expectedValue, account.getBalance() );
     }
+
+    @Test
+    public void withdrawShouldClearBalanceAndReturnFullBalance()
+    {
+        // Arrange
+        double initialBalance = 200.0;
+        double expectedValue = 0.0;
+        Account account = AccountFactory.createAccountWithBalance( initialBalance );
+
+        // Act
+        double result = account.fullWithdraw();
+
+        // Assert
+        Assertions.assertTrue( expectedValue == account.getBalance() );
+        Assertions.assertTrue( initialBalance == result );
+    }
 }
