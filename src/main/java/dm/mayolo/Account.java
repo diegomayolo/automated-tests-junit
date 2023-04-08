@@ -1,8 +1,13 @@
 package dm.mayolo;
 
+/**
+ *
+ * @author dm
+ */
 public class Account
 {
     public static Double DEPOSIT_FEE_PERCENTAGE = 0.02;
+
     private Long id;
     private Double balance;
 
