@@ -1,6 +1,6 @@
 package factory;
 
-import dm.mayolo.Account;
+import dm.mayolo.entities.Account;
 
 /**
  *

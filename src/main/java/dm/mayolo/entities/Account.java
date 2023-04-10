@@ -1,4 +1,4 @@
-package dm.mayolo;
+package dm.mayolo.entities;
 
 /**
  *

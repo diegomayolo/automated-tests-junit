@@ -1,4 +1,4 @@
-import dm.mayolo.Account;
+import dm.mayolo.entities.Account;
 import factory.AccountFactory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -69,7 +69,7 @@ public class AccountTests
     }
 
     @Test
-    public void withdrawShouldThrowExceptionWhenInsufficientAmount()
+        public void withdrawShouldThrowExceptionWhenInsufficientBalance()
     {
         // Assert
         Assertions.assertThrows( IllegalArgumentException.class, () ->
